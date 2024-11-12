@@ -1,4 +1,5 @@
 # Example similar to P4HW1 
+# Alexis McCarroll
 
 # List of available items (this is not needed in hw)
 availableitems = ["litter", "cat food", "feather", "collar", "toy", \
