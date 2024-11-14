@@ -26,7 +26,22 @@ print("--------------Results-------------")
 print(f"{'Lowest Grade: ':<15}{min(grades)}")
 #modify the list
 grades.remove (min(grades))
-print(f"{'Modified List: ':<15}{grades}")
+print(f"{'Modified List: ':<15}{(grades)}")
 #get the average
 average = sum(grades)/len(grades)
-print(f"{'Scores Average: ':<15}{average}")
+print(f"{'Scores Average: ':<15}{(average):.2f}")
+
+# Determine letter grade based off the average
+if average >= 90:
+    letter_grade = "A"
+elif average >= 80:
+    letter_grade =  "B"
+elif average >= 70:
+    letter_grade =  "C"
+elif average >= 60:
+    letter_grade =  "D"
+elif average <= 59:
+    letter_grade =  "F"
+
+print(f"{'Grade: ':<15}{letter_grade}")
+print("-" *30)
